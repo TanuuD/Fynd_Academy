@@ -181,7 +181,7 @@
 
 .speciality .box-container .box .content{
     text-align: center;
-    /* background: center; */
+    background: #fff; 
     padding: 2rem;
 }
 

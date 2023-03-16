@@ -197,6 +197,7 @@ header .navbar a:hover {
 
 .speciality .box-container .box .content img {
   margin: 1.5rem 0;
+  background: transparent #f7f7f7;
 }
 
 .speciality .box-container .box .content h3 {
@@ -357,8 +358,10 @@ header .navbar a:hover {
 .footer {
   background: #000;
   text-align: center;
-  /* margin-bottom: 0; */
+  margin-bottom: 0;
+  
 }
+
 .footer .share {
   display: flex;
   gap: 1.5rem;
@@ -374,13 +377,17 @@ header .navbar a:hover {
 
 /*Scroll-top*/
 #scroll-top {
-  position: fixed;
-  top: -120%;
-  right: 2rem;
+  position: sticky;
+  top: 400px;
+  /* right: 0; */
   padding: 3rem 3rem;
-  font-size: 4rem;
   background: red;
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition: 1s linear;
+  font-size: small;
 }
+
+
+
+

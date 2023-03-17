@@ -237,13 +237,13 @@ header .navbar a:hover {
   flex: 1 1 30rem;
   position: relative;
 }
-.popular .box-containner .box img {
+.popular .box-container .box img {
   height: 25rem;
   object-fit: cover;
   width: 100%;
   border-radius: 0.5rem;
 }
-.popular .box-containner .box .price {
+.popular .box-container .box .price {
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -253,7 +253,7 @@ header .navbar a:hover {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
-.popular .box-containner .box .stars i {
+.popular .box-container .box .stars i {
   color: gold;
   font-size: 1.7rem;
   padding: 1rem 0.1rem;
@@ -359,7 +359,6 @@ header .navbar a:hover {
   background: #000;
   text-align: center;
   margin-bottom: 0;
-  
 }
 
 .footer .share {
@@ -387,7 +386,3 @@ header .navbar a:hover {
   transition: 1s linear;
   font-size: small;
 }
-
-
-
-

@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: lightcoral;
+  font-family: "Patrick Hand", cursive;
+}
+.birthdayCard {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    0 10px 100px rgba(0, 0, 0, 0.4);
+}
+.birthdayCard:hover .CardFront {
+  transform: rotateY(-160deg);
+}
+.birthdayCard:hover .text,
+.number {
+  visibility: hidden;
+}
+.CardFront {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  transform-origin: left;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.img {
+  position: absolute;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+  width: 350px;
+  height: 450px;
+  top: 0;
+}
+.number {
+  position: absolute;
+  color: white;
+  margin-bottom: 80%;
+  margin-left: 5%;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.text {
+  position: absolute;
+  place-items: center;
+}
+.text-name {
+  letter-spacing: 5px;
+  color: white;
+  margin-top: 71%;
+  margin-left: 5%;
+}
+.text-wish {
+  color: #f9629f;
+  margin-top: 100%;
+
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: medium;
+}
+.CardInside {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 450px;
+  /* box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  transform-origin: left;
+  place-items: center;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.back-text {
+  width: 150px;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(254, 65, 121, 0.941);
+}
+.imgCake {
+  background: url(/img/cake.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+}

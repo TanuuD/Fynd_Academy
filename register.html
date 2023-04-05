@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!----ion icons----->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--fontawesome-->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <nav style="background-color: #1f5c70">
+      <div class="container nav-container">
+        <a href="index.html"><img src="./img/logo.png" alt="logo" /></a>
+        <ul>
+          <li>
+            <a id="users" href="Users.html">Users</a>
+          </li>
+          <li>
+            <a id="" href="business.html">Business</a>
+          </li>
+          <li>
+            <a id="register" href="register.html">Register your business</a>
+          </li>
+          <li><a href="#">Download the app</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Register-->
+    <div class="register">
+      <form action="" class="form">
+        <h2>SIGN IN</h2>
+        <select name="Who are you?" id="user-select" class="box">
+          <option value="What describes you best?">
+            What describes you best?
+          </option>
+          <option value="dog">I am an user</option>
+          <option value="cat">I am a business owner</option>
+        </select>
+        <input
+          type="text"
+          name="business_name"
+          class="box"
+          value="Business name"
+        />
+
+        <input type="text" name="name" class="box" value="First Name" />
+        <input type="text" name="lname" class="box" value="Last Name" />
+        <input type="email" name="email" class="box" value="Enter Email" />
+
+        <input
+          type="password"
+          name="password"
+          class="box"
+          ="Enter Password"
+          placeholder="Enter Password"
+          required
+        />
+
+        <input type="submit" value="SIGN IN" id="submit" />
+        <a href="#">Forget Password?</a>
+      </form>
+      <div class="side">
+        <img src="/img/register.jpg" alt="register" />
+      </div>
+    </div>
+
+    <!----Users---->
+    <div class="user">
+      <h1>HOW WILL IT HELP YOU?</h1>
+      <div class="user_step">
+        <img src="/img/user_step1.png" alt="user_step1" />
+        <h3>Increase Revenue</h3>
+      </div>
+      <div class="user_step">
+        <img src="/img/user_step2.png" alt="user_step2" />
+        <h3>Free Marketing</h3>
+      </div>
+      <div class="user_step">
+        <img src="/img/user_step3.png" alt="user_step3" />
+        <h3>Reduces food waste</h3>
+      </div>
+    </div>
+
+    <!-----Good for business-->
+    <div class="business">
+      <div class="business_img">
+        <img src="/img/save_planet.png" alt="save_planet" />
+      </div>
+
+      <div class="business_text">
+        <h1>HELPS THE BUSINESS, HELPS THE PLANET EVEN MORE</h1>
+        <p>
+          Help in creating a better solution for food waste, find customers and
+          generate more revenue with us.
+        </p>
+
+        <div class="reg_btn"><a href="#">Register your business</a></div>
+      </div>
+    </div>
+
+    <!----Accordion---->
+    <h1 class="acc-h1">FAQ</h1>
+    <section class="section">
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-item" id="question1">
+            <a class="accordion-link" href="#question1">
+              How does this benefit my business?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                The app lets you reduce your food waste and earn back money on
+                stock that would have been thrown away - a win-win. Further
+                still, 76% of customers who discover a store through the app
+                will return as full-paying customers.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="accordion-item" id="question2">
+            <a class="accordion-link" href="#question2">
+              How much extra work does this create for my business?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                Almost no more than it takes to throw food away! All that is
+                required of you is to set aside your surplus to be picked up by
+                a customer. Then, at the pickup time, the customer shows their
+                digital receipt and you hand over the food.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="accordion-item" id="question3">
+            <a class="accordion-link" href="#question3">
+              How much does it cost?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                Signing up to the app is free, and you won't pay anything unless
+                you sell food through the app. Once you start selling food,
+                we'll deduct an annual fee and a small commission on each dish
+                and Surprise Bag sold. This commission fee varies depending on
+                what you charge for your Surprise Bags. Reach out to our team,
+                and we'll walk you through it.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="accordion-item" id="question4">
+            <a class="accordion-link" href="#question4">
+              How do I get paid?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                We'll send you the money you've earned from the app on a
+                quarterly basis. All you have to do is give us your bank account
+                details - you can do this using MyStore on the app or on
+                desktop.
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="accordion-img">
+        <img
+          src="https://img.freepik.com/free-vector/organic-flat-illustration-people-asking-questions_23-2148927236.jpg?w=740&t=st=1680346719~exp=1680347319~hmac=c83da16a466bdcca6edd803d982a2bd9771e80f0aa465f67d2d2df5ebf8caf2c"
+          alt="accordion-img"
+        />
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">delivery</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">bakeries</a></li>
+              <li><a href="#">restaurants</a></li>
+              <li><a href="#">cafes</a></li>
+              <li><a href="#">local eateries</a></li>
+              <li><a href="#">grocery store</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
